@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { WhatsApp, Plus, Minus } from "lucide-react";
+import { MessageSquare, Plus, Minus } from "lucide-react";
 
 interface MenuItem {
   id: string;
@@ -65,7 +65,7 @@ const mockCategories: Category[] = [
     ],
   },
   {
-    id: "1",
+    id: "2",
     name: "Hambúrgueres",
     items: [
       {
@@ -77,10 +77,8 @@ const mockCategories: Category[] = [
         category: "Hambúrgueres",
         available: true,
       },
-      // Add more items
     ],
   },
-  // Add more categories
 ];
 
 const DigitalMenu = () => {
@@ -215,8 +213,8 @@ const DigitalMenu = () => {
               onClick={sendToWhatsApp}
               className="bg-green-500 hover:bg-green-600 text-white"
             >
-              <WhatsApp className="w-4 h-4 mr-2" />
-              Pedir no WhatsApp
+              <MessageSquare className="w-4 h-4 mr-2" />
+              Enviar Pedido
             </Button>
           </div>
         </motion.div>

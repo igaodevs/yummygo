@@ -30,6 +30,11 @@ interface ModuleNavigationProps {
 
 const defaultItems: NavigationItem[] = [
   {
+    name: "Performance",
+    icon: <LayoutDashboard className="w-5 h-5" />,
+    path: "/performance",
+  },
+  {
     name: "Dashboard",
     icon: <LayoutDashboard className="w-5 h-5" />,
     path: "/",
